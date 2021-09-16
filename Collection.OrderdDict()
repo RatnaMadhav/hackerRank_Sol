@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import OrderedDict
+n=int(input())
+l=OrderedDict()
+for i in range(n):
+    item, space, order = input().rpartition(" ")
+    order=int(order)
+    if item in l:
+        l[item]+=order
+    else:
+        l[item]=order
+for i in l.items():
+    print(*i)
