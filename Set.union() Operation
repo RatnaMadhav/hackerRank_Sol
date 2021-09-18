@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+x=int(input())
+y=set(input().split())
+a=int(input())
+b=set(input().split())
+print(len(y.union(b)))
