@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+M,N=map(int,input().split())
+s1=".|."
+s2="WELCOME"
+for i in range(M//2):
+    print((s1*((2*i)+1)).center(N,"-"))
+print(s2.center(N,"-"))
+for i in range(M//2-1,-1,-1):
+    print((s1*((2*i)+1)).center(N,"-"))
