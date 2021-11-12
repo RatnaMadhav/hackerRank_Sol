@@ -1,0 +1,7 @@
+import numpy
+N=int(input())
+x=numpy.array([input().split() for i in range(N)],int)
+y=numpy.array([input().split() for i in range(N)],int)
+# print(x)
+# print(y)
+print(x.dot(y))
