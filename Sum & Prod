@@ -1,0 +1,6 @@
+import numpy
+N,M=map(int,input().split())
+X=numpy.array([input().split() for i in range(N)],int)
+Y=numpy.sum(X,axis=0)
+print(numpy.product(Y))
+
