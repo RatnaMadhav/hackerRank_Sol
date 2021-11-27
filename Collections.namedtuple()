@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import namedtuple
+N=int(input())
+nc=namedtuple("nc",input())
+marks_lst=[]
+for i in range(N):
+    marks=int(nc(*input().split()).MARKS)
+    marks_lst.append(marks)
+print(sum(marks_lst)/N)
