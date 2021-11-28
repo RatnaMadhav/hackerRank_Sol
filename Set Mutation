@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+A=int(input())
+elem_A=set(map(int,input().split()))
+N=int(input())
+for i in range(N):
+    task,N1=input().split()
+    elem_N1=set(map(int,input().split()))
+    eval("elem_A.{0}({1})".format(task,elem_N1))   
+print(sum(list(map(int,elem_A))))
