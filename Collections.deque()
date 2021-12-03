@@ -1,0 +1,16 @@
+
+from collections import deque
+N=int(input())
+d=deque()
+for i in range(N):
+    new_ip=input().split()
+    if(new_ip[0]=="append"):
+        d.append(new_ip[1])
+    if(new_ip[0]=="appendleft"):
+        d.appendleft(new_ip[1])
+    if(new_ip[0]=="pop"):
+        d.pop()
+    if(new_ip[0]=="popleft"):
+        d.popleft()
+    
+print(*d)
