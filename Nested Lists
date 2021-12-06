@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    score_lst=[]
+    markssheet_lst=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        score_lst.append(score)
+        markssheet_lst.append([name,score])
+    sec_low=sorted(list(set(score_lst)))[1]
+    names=[ name for name,score in sorted(markssheet_lst) if score==sec_low]
+    print("\n".join(names))
