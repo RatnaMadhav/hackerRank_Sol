@@ -1,0 +1,6 @@
+x = int(input())
+y = list(map(int,input().split()))
+if (all([i>0 for i in y]) and any([str(i)==str(i)[::-1] for i in y])):
+    print("True")
+else:
+    print("False")
