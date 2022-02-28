@@ -1,0 +1,12 @@
+N=int(input())
+for i in range(N):
+    testcase=input()
+    try:
+        int(testcase)
+        print('False')
+    except:
+        try:
+            float(testcase)
+            print('True')
+        except:
+            print('False')
