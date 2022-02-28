@@ -1,0 +1,8 @@
+
+n=int(input())
+for i in range(n):
+    x = input()
+    if (x[0]=="7" or x[0]=="8" or x[0]=="9") and len(x)==10 and x.isnumeric():
+        print("YES")
+    else:
+        print("NO")
