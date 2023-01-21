@@ -1,0 +1,4 @@
+from itertools import *
+n=input()
+for x,y in groupby(n):
+    print(tuple([len(list(y)),int(x)]),end=" ")
